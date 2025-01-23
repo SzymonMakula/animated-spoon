@@ -18,7 +18,7 @@ do
     echo "<li><a href=${PARENT_BASENAME}>${PARENT_BASENAME}</a></li>";
 done );
 
-echo $PAGE_NAMES;
+mkdir -p docs
 cat > docs/index.html << EOF
 <!DOCTYPE html>
 <html>
