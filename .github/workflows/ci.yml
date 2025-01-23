@@ -18,8 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10
       # pnpm/action-setup@v2 automatically installs version defined in `package.json`
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
