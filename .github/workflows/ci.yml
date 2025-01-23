@@ -28,6 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+      - run: echo $(ls)
       - run: pnpm run build
       - run: pnpm run build:pages
       - run: pnpm run generate-page
