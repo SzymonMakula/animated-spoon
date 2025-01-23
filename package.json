@@ -4,6 +4,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "generate-page": "bash generate-page.bash",
+    "build:pages": "turbo generate-page",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
