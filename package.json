@@ -1,6 +1,5 @@
 {
   "name": "animated-spoon",
-  "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
