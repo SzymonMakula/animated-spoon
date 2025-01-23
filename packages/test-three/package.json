@@ -1,0 +1,14 @@
+{
+  "name": "test-three",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo No command specified",
+    "generate-page": "echo No command specified",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

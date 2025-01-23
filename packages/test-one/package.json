@@ -1,0 +1,15 @@
+{
+  "name": "test-one",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "generate-page": "mkdir -p github-page && cp dist/index.js github-page/index.js && cp template/index.html github-page/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^4.31.0"
+  }
+}
