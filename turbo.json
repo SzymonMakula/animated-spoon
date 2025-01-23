@@ -8,7 +8,7 @@
     },
     "generate-page": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "outputs": ["github-page/**"]
     },
     "dev": {
       "cache": false,
