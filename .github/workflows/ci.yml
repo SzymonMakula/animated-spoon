@@ -29,15 +29,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-  build:
-    needs: cache-and-install
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [ "22.x" ]
-
-    steps:
       - run: pnpm run build
       - run: pnpm run build:pages
       - run: pnpm run generate-page
