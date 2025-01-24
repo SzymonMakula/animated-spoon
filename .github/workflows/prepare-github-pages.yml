@@ -1,4 +1,4 @@
-name: ci
+name: prepare-github-pages
 
 on:
   push:
