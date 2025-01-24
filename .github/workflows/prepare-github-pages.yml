@@ -34,8 +34,19 @@ jobs:
       - run: pnpm run build
       - run: pnpm run build:pages
       - run: pnpm run generate-page
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
         with:
          path: docs/
+  deploy:
+    runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
